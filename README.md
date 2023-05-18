@@ -141,11 +141,10 @@ Priority   : 0-10 (sesuaikan dengan prioritas mail server Anda, semakin kecil ni
         - p=none: Menetapkan kebijakan tindakan saat gagal verifikasi (none, quarantine, atau reject). Dalam contoh ini, tindakan tidak diambil (none).
         - rua=mailto:dmarc@example.com: Menentukan alamat email yang akan menerima laporan agregat DMARC.
         - ruf=mailto:abuse@example.com: Menentukan alamat email yang akan menerima laporan forensik DMARC.
-        - fo=1: Menentukan opsi tindakan forensik yang harus diambil saat terjadi pelanggaran DMARC.
-  
-  NB: Informasi detail mengenai record DMARC ini silakan Anda menghubungi pihak penyedia Mail server Anda.
- 
-    ```
+        - fo=1: Menentukan opsi tindakan forensik yang harus diambil saat terjadi pelanggaran DMARC
+        
+        NB: Informasi detail mengenai record DMARC ini silakan Anda menghubungi pihak penyedia Mail server Anda.
+     ```
 
 *Sebagai informasi terakhir setelah perubahan/penambahan record, maka domain akan memasuki proses propagasi terlebih dahulu agar record yang telah diubah/ditambah dapat resolve sepenuhnya ke seluruh ISP, dan biasanya proses propagasi ini akan memakan waktu maksimal 2x24 jam bergantung pada kecepatan masing masing resolver ISP.*
 
