@@ -147,6 +147,22 @@ Priority   : 0-10 (sesuaikan dengan prioritas mail server Anda, semakin kecil ni
         NB: Informasi detail mengenai record DMARC ini silakan Anda menghubungi pihak penyedia Mail server Anda.
      ```
 
+Setelah kami menjabarkan tentang beberapa record domain diatas, untuk menambahkan record tersebut tergantung dari nameserver yang  digunakan Domain. 
+
+1. Apabila Domain menggunakan nameserver default dari CloudKilat Anda dapat menambahkannya pada ***portal DNS Manajemen CloudKilat*** Anda
+   - Jika domain menggunakan nameserver berikut: *ns1.kilatdomain.id sd ns2.kilatdomain.id atau ns1.kilatdomain.cc sd ns4.kilatdomain.cc atau ns1.kilatdomain.net sd ns4.kilatdomain.net* maka domain Anda menggunakan nameserver default dari CloudKilat.
+   - Adapun penambahan recordnya ialah sebagai berikut:
+      - Masuk Portal CloudKilat (https://portal.cloudkilat.com/)
+      - Pilih Menu Domains
+      - Pilih **Manage** Pada Domain    
+      - Pilih **DNS Management**
+      - Masukan Record yang diinginkan 
+      - Pilih Add
+  
+2. Apabila Domain menggunakan Nameserver Private maka silakan Anda tambahkan pada ***file konfigurasi DNS*** pada DNS Server Anda
+
+3. Apabila Domain menggunakan Nameserver Diluar CloudKilat maka silakan Anda menghubungi ***pihak penyedia nameserver untuk informasi detailnya*** 
+
 *Sebagai informasi terakhir setelah perubahan/penambahan record, maka domain akan memasuki proses propagasi terlebih dahulu agar record yang telah diubah/ditambah dapat resolve sepenuhnya ke seluruh ISP, dan biasanya proses propagasi ini akan memakan waktu maksimal 2x24 jam bergantung pada kecepatan masing masing resolver ISP.*
 
 Sekian informasi yang dapat kami sampaikan dan Apabila Anda mengalami kesuliatan dan kendala saat melakukan penambahan record DNS, mohon untuk menghubungi tim support kami melalui tiket atau e-mail ke info@cloudkilat.com
