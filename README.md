@@ -13,7 +13,8 @@ Pertama kami akan memberikan record yang umum digunakan untuk domain:
 -----------
 Contoh:
 -----------
-@ IN A 192.128.12.111
+@   IN A 192.128.12.111
+sub IN A 192.128.12.111
 
 --------------------------------------------
 Hostname   : @ (untuk inisiasi root domain),  Sub (tanpa titik dibelakangnya (untuk inisiasi subdomain))
